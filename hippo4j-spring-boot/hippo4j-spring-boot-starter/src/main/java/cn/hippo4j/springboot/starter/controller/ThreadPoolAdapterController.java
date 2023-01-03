@@ -81,6 +81,7 @@ public class ThreadPoolAdapterController {
         ThreadPoolAdapter threadPoolAdapter = THREAD_POOL_ADAPTER_BEAN_CONTAINER.get(requestParameter.getMark());
         Optional.ofNullable(threadPoolAdapter).ifPresent(each -> each.updateThreadPool(requestParameter));
 
+
         return Results.success();
 
     }
